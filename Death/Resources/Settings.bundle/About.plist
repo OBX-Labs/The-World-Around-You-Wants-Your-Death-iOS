@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>An interactive text and audio app that explores Native American themes of cultural heritage, based on questions my children have about their Cherokee, Mohawk and Italian background. It allows the user to explore those issues her or himself by writing custom texts and integrating them into the app experience. These custom texts are triggered by the user tapping on the screen.
+
+The World That Surrounds You Wants Your Death is the eight and final work in the P.o.E.M.M. (Poem for Excitable [Mobile] Media) series.
+
+To find out more, please visit www.poemm.net, send an email to apps@jasonlewis.org or look for the #poemm Twitter tag.
+
+Programming by Serge Maheu, from original code by Bruno Nadeau.
+
+Original Musical Score by Paul Dolden.
+
+Based on the NextText architecture
+
+Version 1.0.0
+
+2013 ©  Jason Edward Lewis</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>About</string>
+</dict>
+</plist>
