@@ -9,6 +9,10 @@
 #import "Funnel.h"
 #import "OKNoise.h"
 
+#import "../OpenGLES/ESRenderer.h"
+#import "../OpenGLES/ES1Renderer.h"
+#import "../OpenGLES/EAGLView.h"
+
 @implementation Funnel
 
 @synthesize touch;
@@ -33,8 +37,39 @@
         strings = [[NSMutableArray alloc] init];
         accumulateDrawBuffer = [[NSMutableArray alloc] init];
 
-        
         bounds = aRenderingBounds;
+        
+        //VICTOR - Create separate buffers to draw noodle text separately from everything else
+        
+        //currentBuffer = 0;
+        
+        //create buffer
+        //GLuint framebuffer = 12;
+        //GLuint texture;
+        //GLsizei w = 1280;
+        //GLsizei h = 720;
+        //GLenum status;
+
+        //glGenFramebuffersOES(1, &framebuffer);
+        //glBindFramebufferOES(GL_FRAMEBUFFER_OES, framebuffer);
+        
+        //create texture
+        //glGenTextures(1, &texture);
+        //glBindTexture(GL_TEXTURE_2D, texture);
+        //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+        //glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, w, h, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
+        //glFramebufferTexture2DOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_TEXTURE_2D, texture, 0);
+        
+        //check status
+        //status = glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES);
+        
+        //if (status != GL_FRAMEBUFFER_COMPLETE_OES) {
+        //    NSLog(@"Framebuffer status: %x", (int)status);
+        //}
+        
+        //undbind framebuffer
+        //glBindFramebufferOES(GL_FRAMEBUFFER_OES, 0);
     }
   
     return self;
@@ -139,6 +174,13 @@
 -(void) nextBuffer
 {
     //pgi = (pgi+1)%pg.length;
+    if (currentBuffer == 0) {
+        currentBuffer = 1;
+    } else {
+        currentBuffer = 0;
+    }
+    
+    
 }
 
 -(void) update:(long)dt
@@ -147,8 +189,8 @@
         alpha -= 1;
         if (alpha <= 0) {
             dying = false;
-            alpha = 255;
-            
+            alpha = 0;
+
             //PGraphics b = back();
             //b.beginDraw();
             //b.background(0, 0);
@@ -173,7 +215,7 @@
     //move only the latest string
     FunnelString *string = [strings objectAtIndex:(strings.count-1)];
     if (touch == -1) {
-       //[string setTarget:OKPointMake(ox+([OKNoise noiseX:20 y:[self getMillis]/1000]-0.5f)*800 , -fontSize, 0) m:(float)(1.6f*speed) o:0.0f];
+       //[string setTarget:OKPointMake(ox+([OKNoise noiseX:00 y:[self getMillis]/1000]-0.5f)*800 , -fontSize*2, 0) m:(float)(1.6f*speed) o:0.0f];
        [string setFlock:(float)(2*speed) a:(float)(1*speed) c:(float)(2*speed) m:(float)(2*speed)];
     
     }
@@ -187,16 +229,18 @@
         string = nil;
         
         //switch buffer
-        [self nextBuffer];
+        //[self nextBuffer];
     }		
 }
 
+//VICTOR - ADD FUNNEL TAIL
 -(void) draw
 {
-    if(dying) {
-        glColor4f(1, 1, 1, alpha);
+    
+    //if(dying) {
+        //glColor4f(1, 1, 1, 1);
         //p.image(back(), 0, 0);
-    }
+    //}
     
     if(strings.count==0)
         return;
@@ -222,21 +266,26 @@
         [accumulateDrawBuffer addObject:stringCopy];
     }
     
-    
     for(FunnelString *string in accumulateDrawBuffer)
     {
         [string draw];
-    }
-     */
-     
+    }*/
+    
+    //set window as context
+    //[_context presentRenderbuffer:GL_RENDERBUFFER];
+    
+    //glBindFramebufferOES(GL_FRAMEBUFFER_OES, 12);
     
     for(FunnelString *string in strings)
     {
         [string draw];
     }
-     
+    
+    //glBindFramebufferOES(GL_FRAMEBUFFER_OES, 0);
+    //glViewport(0,0,1280,720);
+    
+    //glColor4f(1, 1, 1, 1);
 }
-
 
 
 -(long long) getMillis{

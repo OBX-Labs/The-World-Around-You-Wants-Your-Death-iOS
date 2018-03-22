@@ -27,6 +27,8 @@
     
     NSMutableArray *accumulateDrawBuffer;
     
+    int currentBuffer;
+    
     //PFont font;
     OKTessFont* font;
 	int fontSize;

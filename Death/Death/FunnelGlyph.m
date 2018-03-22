@@ -165,6 +165,7 @@
 
 -(void) draw
 {
+    
     glPushMatrix();
     glTranslatef(location.x, location.y, 0);
     [value draw];

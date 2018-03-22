@@ -733,6 +733,7 @@ static float TOUCH_OFFSET;
     
 }
 
+
 /*
 -(void) updateFunnelTouch{
     for(Funnel *f in funnels) {
@@ -798,6 +799,7 @@ static float TOUCH_OFFSET;
 
 }
 */
+
 
 -(void) updateFunnels {
     //check if the touches associated with the funnels still exists
