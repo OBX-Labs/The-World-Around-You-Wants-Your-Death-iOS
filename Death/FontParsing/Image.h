@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Texture2D.h"
-//#import "BuzzAldrinAppDelegate.h"
-#import "AppDelegate.h"
+#import <OBXKit/AppDelegate.h>
 #import "OKImage.h"
 /*
 typedef struct _Quad2

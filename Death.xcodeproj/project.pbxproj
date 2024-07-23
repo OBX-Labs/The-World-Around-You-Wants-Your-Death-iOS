@@ -36,7 +36,6 @@
 		950D17C6178C8D0600A1FA28 /* OKWordObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 950D17B9178C8D0600A1FA28 /* OKWordObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		950D17C7178C8D0600A1FA28 /* OKTessData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 950D17BC178C8D0600A1FA28 /* OKTessData.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		950D17C8178C8D0600A1FA28 /* OKTessFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 950D17BE178C8D0600A1FA28 /* OKTessFont.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		950D186C178C8D0D00A1FA28 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 950D17CC178C8D0D00A1FA28 /* Appirater.m */; };
 		950D186D178C8D0D00A1FA28 /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 950D17D0178C8D0D00A1FA28 /* DejalActivityView.m */; };
 		950D186E178C8D0D00A1FA28 /* OKNewAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 950D17D4178C8D0D00A1FA28 /* OKNewAccount.m */; };
 		950D186F178C8D0D00A1FA28 /* OKRequestPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 950D17D6178C8D0D00A1FA28 /* OKRequestPassword.m */; };
@@ -247,7 +246,6 @@
 		950D1772178C513E00A1FA28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		950D1774178C513E00A1FA28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		950D1776178C513E00A1FA28 /* Death-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Death-Prefix.pch"; sourceTree = "<group>"; };
-		950D1777178C513E00A1FA28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		950D1778178C513E00A1FA28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		950D1788178C8CF100A1FA28 /* CMTPAttraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTPAttraction.h; sourceTree = "<group>"; };
 		950D1789178C8CF100A1FA28 /* CMTPAttraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTPAttraction.m; sourceTree = "<group>"; };
@@ -290,9 +288,6 @@
 		950D17BC178C8D0600A1FA28 /* OKTessData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OKTessData.mm; sourceTree = "<group>"; };
 		950D17BD178C8D0600A1FA28 /* OKTessFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTessFont.h; sourceTree = "<group>"; };
 		950D17BE178C8D0600A1FA28 /* OKTessFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTessFont.m; sourceTree = "<group>"; };
-		950D17CB178C8D0D00A1FA28 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
-		950D17CC178C8D0D00A1FA28 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
-		950D17CD178C8D0D00A1FA28 /* AppiraterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiraterDelegate.h; sourceTree = "<group>"; };
 		950D17CF178C8D0D00A1FA28 /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
 		950D17D0178C8D0D00A1FA28 /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
 		950D17D3178C8D0D00A1FA28 /* OKNewAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKNewAccount.h; sourceTree = "<group>"; };
@@ -633,7 +628,6 @@
 				950D17C9178C8D0D00A1FA28 /* OKPoEMM */,
 				950D17A7178C8D0500A1FA28 /* OKFont */,
 				950D1787178C8CF100A1FA28 /* CMTraerPhysics */,
-				950D1777178C513E00A1FA28 /* AppDelegate.h */,
 				950D1778178C513E00A1FA28 /* AppDelegate.m */,
 				950D176F178C513E00A1FA28 /* Supporting Files */,
 			);
@@ -733,7 +727,6 @@
 		950D17C9178C8D0D00A1FA28 /* OKPoEMM */ = {
 			isa = PBXGroup;
 			children = (
-				950D17CA178C8D0D00A1FA28 /* Appirater */,
 				950D17CE178C8D0D00A1FA28 /* DSActivityView */,
 				950D17D1178C8D0D00A1FA28 /* OKAccountManager */,
 				950D17E2178C8D0D00A1FA28 /* OKInfoView */,
@@ -749,16 +742,6 @@
 				950D1821178C8D0D00A1FA28 /* Resources */,
 			);
 			path = OKPoEMM;
-			sourceTree = "<group>";
-		};
-		950D17CA178C8D0D00A1FA28 /* Appirater */ = {
-			isa = PBXGroup;
-			children = (
-				950D17CB178C8D0D00A1FA28 /* Appirater.h */,
-				950D17CC178C8D0D00A1FA28 /* Appirater.m */,
-				950D17CD178C8D0D00A1FA28 /* AppiraterDelegate.h */,
-			);
-			path = Appirater;
 			sourceTree = "<group>";
 		};
 		950D17CE178C8D0D00A1FA28 /* DSActivityView */ = {
@@ -1568,7 +1551,6 @@
 				950D17C6178C8D0600A1FA28 /* OKWordObject.m in Sources */,
 				950D17C7178C8D0600A1FA28 /* OKTessData.mm in Sources */,
 				950D17C8178C8D0600A1FA28 /* OKTessFont.m in Sources */,
-				950D186C178C8D0D00A1FA28 /* Appirater.m in Sources */,
 				950D186D178C8D0D00A1FA28 /* DejalActivityView.m in Sources */,
 				950D186E178C8D0D00A1FA28 /* OKNewAccount.m in Sources */,
 				950D186F178C8D0D00A1FA28 /* OKRequestPassword.m in Sources */,
