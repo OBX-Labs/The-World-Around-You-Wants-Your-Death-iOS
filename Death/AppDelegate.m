@@ -14,7 +14,6 @@
 #import "OKAppProperties.h"
 #import "OKPoEMMProperties.h"
 #import "OKInfoViewProperties.h"
-#import "TestFlight.h"
 
 #define IS_IPAD_2 (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad && [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) // Or more
 #define IS_IPHONE_5 (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone && [[UIScreen mainScreen] bounds].size.height == 568.0f)
@@ -41,10 +40,7 @@
     
     //Device won't sleep
     [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
-    
-    // TestFlight
-    //[TestFlight takeOff:@"a059f578-bf42-4a0c-ba43-152f26dc9014"];
-    
+        
     //Init Window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
