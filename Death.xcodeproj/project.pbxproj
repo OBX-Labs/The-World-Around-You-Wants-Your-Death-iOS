@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27ACC97C2C4F54ED00493D22 /* OBXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ACC97B2C4F54ED00493D22 /* OBXKit.framework */; };
-		27ACC97D2C4F54ED00493D22 /* OBXKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27ACC97B2C4F54ED00493D22 /* OBXKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57F00E3A2045D05C0022C9E2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F00E392045D05C0022C9E2 /* Media.xcassets */; };
 		950D1769178C513E00A1FA28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950D1768178C513E00A1FA28 /* UIKit.framework */; };
 		950D176B178C513E00A1FA28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950D176A178C513E00A1FA28 /* Foundation.framework */; };
@@ -228,7 +226,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				27ACC97D2C4F54ED00493D22 /* OBXKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,7 +233,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		27ACC97B2C4F54ED00493D22 /* OBXKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OBXKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F00E392045D05C0022C9E2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		950D1765178C513E00A1FA28 /* Death.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Death.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		950D1768178C513E00A1FA28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -565,7 +561,6 @@
 				950D19D2178C93C800A1FA28 /* Security.framework in Frameworks */,
 				950D19D0178C93BF00A1FA28 /* SystemConfiguration.framework in Frameworks */,
 				950D19CE178C93B500A1FA28 /* MessageUI.framework in Frameworks */,
-				27ACC97C2C4F54ED00493D22 /* OBXKit.framework in Frameworks */,
 				950D19CC178C93AB00A1FA28 /* AudioToolbox.framework in Frameworks */,
 				950D1769178C513E00A1FA28 /* UIKit.framework in Frameworks */,
 				950D176B178C513E00A1FA28 /* Foundation.framework in Frameworks */,
@@ -597,7 +592,6 @@
 		950D1767178C513E00A1FA28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27ACC97B2C4F54ED00493D22 /* OBXKit.framework */,
 				950D19E3178CA42600A1FA28 /* AVFoundation.framework */,
 				950D19DF178C941C00A1FA28 /* libz.dylib */,
 				950D19DD178C941400A1FA28 /* libxml2.dylib */,
