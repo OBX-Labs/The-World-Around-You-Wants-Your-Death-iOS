@@ -67,14 +67,14 @@
         {
             OKUserTexts *rUserTexts = [[OKUserTexts alloc] initWithStyle:UITableViewStylePlain title:@"User Texts" icon:[UIImage imageNamed:[icons objectForKey:@"usertexts"]]];
             userTexts = [[OKNavigationController alloc] initWithRootViewController:rUserTexts andParent:self];
-            [tbcItems addObject:userTexts];
+//            [tbcItems addObject:userTexts];
         }
         
         // Customizable at version 4 or more
         if(version >= 4)
         {
             customize = [[OKNavigationController alloc] initWithRootViewController:nil andParent:self];
-            [tbcItems addObject:customize];
+//            [tbcItems addObject:customize];
         }
         
         // Share shows on every versions
@@ -91,7 +91,7 @@
         }
         [rShare setDisplayViewController:self];
         share = [[OKNavigationController alloc] initWithRootViewController:rShare andParent:self];
-        [tbcItems addObject:share];
+//        [tbcItems addObject:share];
                 
         [tbc setViewControllers:tbcItems animated:YES];
         [self.view addSubview:tbc.view];
